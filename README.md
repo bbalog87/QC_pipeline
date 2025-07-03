@@ -1,5 +1,5 @@
 
-# 🧬 Building a Command-Line Bioinformatics QC Pipeline with Bash
+# Building a Command-Line Bioinformatics QC Pipeline with Bash
 
 This tutorial walks you through constructing a fully functional, educational Bash pipeline for performing quality control (QC) on paired-end sequencing reads using FastQC, fastp, and MultiQC.
 
@@ -18,7 +18,7 @@ Each step is explained **piece by piece**, to help students and professionals **
 
 ---
 
-## 🚀 Overview of the Pipeline Steps
+## Overview of the Pipeline Steps
 
 1. **Run FastQC on raw FASTQ reads**
 2. **Trim/filter the reads using fastp**
@@ -31,7 +31,7 @@ Each step is explained **piece by piece**, to help students and professionals **
 
 ---
 
-### 🧱 Step 1 – Argument Parsing and Error Handling
+### Step 1 – Argument Parsing and Error Handling
 
 ```bash
 set -euo pipefail
@@ -73,7 +73,7 @@ mkdir -p "$RAW_FASTQC_DIR" "$TRIMMED_DIR" "$TRIMMED_FASTQC_DIR" "$MULTIQC_DIR" "
 
 ---
 
-### 🔬 Step 3 – Run FastQC on Raw Reads
+### Step 3 – Run FastQC on Raw Reads
 
 Detect paired-end files (forward `R1` and reverse `R2`), then run FastQC:
 
