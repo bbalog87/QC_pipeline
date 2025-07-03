@@ -133,22 +133,8 @@ QC_RESULTS/
 
 ---
 
-## 📘 Tip for Teaching
-
-Use color-coded echo messages like:
-
-```bash
-echo -e "\033[1;32mSUCCESS\033[0m"
-echo -e "\033[1;33mWARNING\033[0m"
-```
-
-And redirect logs to `$LOGDIR/` to ensure students can **debug** if anything fails.
-
----
 
 ## 🧠 Bonus Exercise
-
-Let students:
 - Modify the script to support `.fq`, `.fq.gz`, `.fastq`
 - Add chimera removal or adapter stats comparison
 - Use MultiQC `--title` and `--comment`
@@ -156,8 +142,7 @@ Let students:
 ---
 
 ## 🧪 That’s it!
-
-You now have a fully functioning, robust, and transparent bioinformatics QC module script that teaches while running. Feel free to extend with your own modules!
+Change mode ansd run :
 
 ```bash
 chmod +x run_QC_module.sh
@@ -167,5 +152,5 @@ chmod +x run_QC_module.sh
 ---
 
 **Author**: Julien Nguinkal  
-**For**: Africa CDC / Kigali Regional Bioinformatics Training  
+**For**: Africa CDC / Linux Regional Bioinformatics Training  
 **Topic**: Robust Bash Pipelines for QC in Genomics
