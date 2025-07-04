@@ -29,9 +29,17 @@ Each step is explained **piece by piece**, to help students and professionals **
 
 ## 🏗️ Step-by-Step Bash Pipeline Construction
 
+## 📌  Goal
+We will **demystify** what each part of the script does:
+- What is happening in the code
+- Why it’s written this way
+- What each syntax means (like `"$@"`, `shift`, `-z`, etc.)
+- How to write help menus and parse user input
+
+
 ---
 
-### Step 1 – Argument Parsing and Error Handling
+### Step 1 – Argument Parsing and Error Handling : strict Bash mode
 
 ```bash
 set -euo pipefail
@@ -40,6 +48,15 @@ set -euo pipefail
 - `-e`: exit if any command fails
 - `-u`: exit if a variable is undefined
 - `-o pipefail`: fail if any command in a pipeline fails
+
+
+| Part        | Explanation |
+|-------------|-------------|
+| `set`       | A Bash command to configure script behavior |
+| `-e`        | Exit the script immediately if any command fails |
+| `-u`        | Exit if a variable is used before being set |
+| `pipefail`  | If part of a pipeline (`|`) fails, the whole pipeline fails |
+
 
 Parse arguments (`-i` for input folder, `-o` for output folder, `-t` for threads):
 
