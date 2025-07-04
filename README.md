@@ -229,6 +229,7 @@ QC_RESULTS/
 ## Bonus Exercise
 - Modify the script to support `.fq`, `.fq.gz`, `.fastq`
 - Add new options like `--skip-fastqc`
+- Ad a flog -ref --reference for eteh reference genome for reads mapping
 ---
 
 ## 🧪 That’s it!
