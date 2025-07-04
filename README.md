@@ -71,7 +71,20 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 ```
+### 💡 Key Bash Concepts
 
+| Element     | Meaning |
+|-------------|---------|
+| `"$1"`      | First argument (flag like `-i`) |
+| `"$2"`      | Its value (e.g. folder path) |
+| `shift 2`   | Remove `$1` and `$2` from argument list |
+| `[[ $# -gt 0 ]]` | Loop while arguments remain |
+
+This lets you call the script like:
+
+```bash
+./run_pipeline.sh -i rawreads -o results -t 12
+```
 ---
 
 ## 📘 Part 2: Define a Usage/Help Function
