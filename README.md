@@ -55,7 +55,7 @@ set -euo pipefail
 | `set`       | A Bash command to configure script behavior |
 | `-e`        | Exit the script immediately if any command fails |
 | `-u`        | Exit if a variable is used before being set |
-| `pipefail`  | If part of a pipeline (`|`) fails, the whole pipeline fails |
+| `pipefail`  | If part of a pipeline (`\|`) fails, the whole pipeline fails |
 
 
 Parse arguments (`-i` for input folder, `-o` for output folder, `-t` for threads):
