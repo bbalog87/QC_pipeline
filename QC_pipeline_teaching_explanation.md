@@ -206,7 +206,6 @@ fi
 
 ---
 
-Would you like to:
-- Add new options like `--skip-fastqc`?
+Bonus:
+- Add new options like `--skip-fastqc`
 - Allow `.fq.gz` or `.fastq`?
-- Build a classroom assignment version?
