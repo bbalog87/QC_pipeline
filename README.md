@@ -85,6 +85,20 @@ This lets you call the script like:
 ```bash
 ./run_pipeline.sh -i rawreads -o results -t 12
 ```
+
+## Input Validation
+
+```bash
+if [[ -z "$READS_DIR" || -z "$OUTDIR" ]]; then
+  echo "❌ Missing required arguments"
+  usage
+fi
+```
+
+- `-z` checks if string is empty
+- `||` is OR: if either variable is empty, print usage and exit
+
+💡 Always validate user input early.
 ---
 
 ## 📘 Part 2: Define a Usage/Help Function
