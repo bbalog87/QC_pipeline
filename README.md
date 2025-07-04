@@ -213,13 +213,22 @@ QC_RESULTS/
 ```
 
 ---
+## 👨🏽‍🏫 Summary for Trainers
 
+| Teaching Focus | Code Feature |
+|----------------|--------------|
+| Robust scripting | `set -euo pipefail` |
+| CLI design | `usage()`, `shift`, `case` |
+| Tool safety | `command -v`, file checks |
+| Modular outputs | `mkdir -p`, structured logs |
+| Debugging | `&> log.txt` for every tool |
+| Extensibility | Add new tools easily via steps |
 
-## 🧠 Bonus Exercise
+---
+
+## Bonus Exercise
 - Modify the script to support `.fq`, `.fq.gz`, `.fastq`
-- Add chimera removal or adapter stats comparison
-- Use MultiQC `--title` and `--comment`
-
+- Add new options like `--skip-fastqc`
 ---
 
 ## 🧪 That’s it!
