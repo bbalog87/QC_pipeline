@@ -114,10 +114,7 @@ done
 
 The following Bash loop checks if all required tools (`fastqc`, `fastp`, `multiqc`) are installed **before** running the pipeline.
 
-### 🔁 Loop Structure
-
-```bash
-for tool in fastqc fastp multiqc; do
+### 🔁 Loop Elements
 
 
 | Element | Explanation |
@@ -126,7 +123,7 @@ for tool in fastqc fastp multiqc; do
 | `!` | Negates the condition (not found) |
 | `&> /dev/null` | Silences output |
 ---
-```
+
 ## 📘 Part 2: Define a Usage/Help Function
 
 ```bash
