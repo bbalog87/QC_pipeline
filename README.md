@@ -126,7 +126,7 @@ for tool in fastqc fastp multiqc; do
 | `!` | Negates the condition (not found) |
 | `&> /dev/null` | Silences output |
 ---
-
+```
 ## 📘 Part 2: Define a Usage/Help Function
 
 ```bash
