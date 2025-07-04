@@ -74,7 +74,25 @@ done
 
 ---
 
-### 📂 Step 2 – Create Output Folder Structure
+## 📘 Part 2: Define a Usage/Help Function
+
+```bash
+usage() {
+  echo "Usage: $0 -i <input_dir> -o <output_dir> [-t <threads>]"
+  echo "  -i   Input FASTQ folder (required)"
+  echo "  -o   Output folder (required)"
+  echo "  -t   Threads [default: 8]"
+  exit 1
+}
+```
+
+- `$0` is the name of the script (e.g., `./run_pipeline.sh`)
+- This function prints help when user runs `-h` or forgets arguments
+- `exit 1` exits with error code (used by tools to detect failure)
+
+---
+
+### 📂 Step 3 – Create Output Folder Structure
 
 We separate results into subfolders:
 
@@ -90,7 +108,7 @@ mkdir -p "$RAW_FASTQC_DIR" "$TRIMMED_DIR" "$TRIMMED_FASTQC_DIR" "$MULTIQC_DIR" "
 
 ---
 
-### Step 3 – Run FastQC on Raw Reads
+### Step 4 – Run FastQC on Raw Reads
 
 Detect paired-end files (forward `R1` and reverse `R2`), then run FastQC:
 
@@ -104,7 +122,7 @@ done
 
 ---
 
-### ✂️ Step 4 – Trim Reads with fastp
+### ✂️ Step 5 – Trim Reads with fastp
 
 Output goes into `trimmed/SAMPLE/`:
 
@@ -114,7 +132,7 @@ fastp   -i "$r1" -I "$r2"   -o "$TRIMMED_DIR/$sample/${sample}_R1_trimmed.fastq.
 
 ---
 
-### 🔁 Step 5 – Run FastQC on Trimmed Reads
+### 🔁 Step 6 – Run FastQC on Trimmed Reads
 
 ```bash
 for r1 in "$TRIMMED_DIR"/*/*_R1_trimmed.fastq.gz; do
@@ -125,7 +143,7 @@ done
 
 ---
 
-### 📊 Step 6 – MultiQC Summary (FastQC-only)
+### 📊 Step 7 – MultiQC Summary (FastQC-only)
 
 **Avoids fastp bug** by setting `TZ=UTC`:
 
