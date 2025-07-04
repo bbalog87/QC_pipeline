@@ -1,8 +1,10 @@
 #!/bin/bash
 
 # =============================================================
-# 🧬 QC Module: FastQC Pre/Post + MultiQC Summary
+# QC Module: FastQC Pre/Post + MultiQC Summary
 # Author: Julien Nguinkal
+# Date:2025-04-07
+# Version: 1.0
 # Description:
 #   This pipeline performs quality control in 4 steps:
 #     1. FastQC on raw paired-end FASTQ reads
@@ -27,7 +29,7 @@ BOLD='\033[1m'
 NC='\033[0m'         # Reset
 
 # -------------------------------
-# 🧮 Default Parameters
+# Default Parameters
 # -------------------------------
 THREADS=8
 READS_DIR=""
