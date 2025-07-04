@@ -99,6 +99,24 @@ fi
 - `||` is OR: if either variable is empty, print usage and exit
 
 💡 Always validate user input early.
+
+
+## 🛠️ Check Tool Availability
+
+```bash
+for tool in fastqc fastp multiqc; do
+  if ! command -v $tool &> /dev/null; then
+    echo "❌ $tool not found"
+    exit 1
+  fi
+done
+```
+
+| Element | Explanation |
+|---------|-------------|
+| `command -v` | Checks if tool is in `$PATH` |
+| `!` | Negates the condition (not found) |
+| `&> /dev/null` | Silences output |
 ---
 
 ## 📘 Part 2: Define a Usage/Help Function
