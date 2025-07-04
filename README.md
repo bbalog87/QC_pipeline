@@ -150,8 +150,9 @@ LOGDIR="$OUTDIR/logs"
 
 mkdir -p "$RAW_FASTQC_DIR" "$TRIMMED_DIR" "$TRIMMED_FASTQC_DIR" "$MULTIQC_DIR" "$LOGDIR"
 ```
+- `mkdir -p` creates folders if they don’t exist
+- Folders are grouped per tool to stay organized
 
----
 
 ### Step 4 – Run FastQC on Raw Reads
 
