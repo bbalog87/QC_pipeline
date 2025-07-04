@@ -218,7 +218,7 @@ QC_RESULTS/
 ```
 
 ---
-## 👨🏽‍🏫 Summary for Trainers
+## 👨🏽‍🏫 Summary
 
 | Teaching Focus | Code Feature |
 |----------------|--------------|
