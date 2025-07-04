@@ -100,7 +100,7 @@ LOGDIR="$OUTDIR/logs"
 mkdir -p "$RAW_FASTQC_DIR" "$TRIMMED_DIR" "$TRIMMED_FASTQC_DIR" "$MULTIQC_DIR" "$LOGDIR"
 
 # -------------------------------
-# 🚀 Start QC Pipeline
+# Start QC Pipeline
 # -------------------------------
 echo -e "${BOLD}${BLUE}🔧 QC pipeline started at [$(date)]${NC}"
 echo -e "${BLUE}📂 Output folder: $OUTDIR${NC}"
