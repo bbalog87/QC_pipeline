@@ -101,7 +101,7 @@ fi
 💡 Always validate user input early.
 
 
-## 🛠️ Check Tool Availability
+## 🛠️  Tool Availability Check in Bash
 
 ```bash
 for tool in fastqc fastp multiqc; do
@@ -111,6 +111,14 @@ for tool in fastqc fastp multiqc; do
   fi
 done
 ```
+
+The following Bash loop checks if all required tools (`fastqc`, `fastp`, `multiqc`) are installed **before** running the pipeline.
+
+### 🔁 Loop Structure
+
+```bash
+for tool in fastqc fastp multiqc; do
+
 
 | Element | Explanation |
 |---------|-------------|
