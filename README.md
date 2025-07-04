@@ -3,7 +3,7 @@
 
 This tutorial walks you through constructing a fully functional Bash pipeline for performing quality control (QC) on paired-end sequencing reads using FastQC, fastp, and MultiQC.
 
-Each step is explained **piece by piece**, to help students and professionals **understand what happens**, **why it matters**, and **how to write robust command-line tools**.
+Each step is explained **piece by piece**, to **understand what happens**, **why it matters**, and **how to write robust command-line tools**.
 
 ---
 
