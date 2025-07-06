@@ -35,7 +35,7 @@ Ensure the following:
 
 ## 3. 📂 Dataset
 
-Assembly directory: `$HOME/module5/assemblies/`
+Assembly directory: `$PARENT/module10/assemblies/`
 
 Sample sheet (`samples.csv`):
 
