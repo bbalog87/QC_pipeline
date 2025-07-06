@@ -6,7 +6,7 @@ This tutorial walks you through running the `nf-core/funcscan` pipeline on local
 
 You will:
 - Execute functional screening modules: AMP, ARG, and BGC
-- Use Singularity, Docker, Podman, and Conda
+- Use Singularity, Docker, Podman, or Conda
 - Apply custom resource configuration for low-memory environments
 
 ---
